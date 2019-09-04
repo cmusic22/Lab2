@@ -1,0 +1,13 @@
+body {
+	font-family: 'Chilanka', cursive;
+}
+
+form {
+	border: solid 2px lightgreen;
+	border-radius: 5px;
+	padding: 25px;
+}
+.jumbotron {
+	background-color: lightgreen;
+	text-align: center;
+}

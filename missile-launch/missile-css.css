@@ -1,0 +1,30 @@
+/*Annimation Learned from W3C Schools*/
+@keyframes example {
+	0% {background-color: red; left:0px; top:0px;}
+	25% {background-color: yellow; left:200px; top:0px;}
+	50% {background-color: blue; left:200px; top:200px;}
+	75% {background-color: purple; left:0px; top:200px;}
+	100% {background-color: red; left: 0px; top:0px;}
+}
+#real-alert {
+	display: block;
+	background-color: red;
+	color: white;
+	font-weight: bolder;
+	padding: 10px 15px;
+	margin: 25px;
+	animation-name: example;
+	animation-duration: 4s;
+	animation-iteration-count: infinite;
+
+}
+
+#test-only {
+	display: block;
+	background-color: green;
+	color: white;
+	font-style: bold;
+	padding: 10px 15px;
+	margin: 25px;
+
+}
