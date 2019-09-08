@@ -1,0 +1,18 @@
+body {
+	font-family: 'Oswald', sans-serif;
+	background-image:  linear-gradient(to bottom right, #170808, #d91818, #e6ed0e, #09630f, #071708);
+}
+form div {
+	margin: 10px 0px;
+}
+
+.jumbotron {
+	text-align: center;
+	font-style: bold;
+	background-image: radial-gradient(red 30%, yellow 60%, green 10%);
+}
+.btn-primary{
+	cursor: pointer;
+	font-size: 1.5rem;
+	padding: 8px 18px;
+}

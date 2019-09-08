@@ -3,56 +3,71 @@
 <html>
 <head>
 	<title>Conference Registrarion</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="conference-registration.css">
+	<link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet">
 </head>
 <body>
-	<form>
+	<div class="container">
+	<h1 class="jumbotron">Conference Registration Form</h1>
+	
+	<form class="mr-3 ml-3">
+		<div class="row">
+		<div class="col-md-6">
 		<div>
-			<label class="" for="name">Name:</label>
-			<input class="" type="text" name="name" id="name" maxlength="70" required="yes">
+			<label for="name">Name:</label>
+			<input class="form-control" type="text" name="name" id="name" maxlength="70" required="yes">
 		</div>
 		<div>
 			<label for="password">Password:</label>
-			<input class="" type="text" name="password" name="password" id="password" required="yes">
+			<input class="form-control" type="text" name="password" name="password" id="password" required="yes">
 		</div>
 		<div>	
 			<label class="" for="email">Email: </label>
-			<input class="" type="text" name="email">
+			<input class="form-control" type="email" name="email">
 		</div>
 		<div>
-			<label class="" for="t-shirt">T-shirt Size:<label>
-			<input type="select" name="t-shirt" required="yes">
-			<select>
+			<label for="t-shirt">T-shirt Size:<label>
+			<select class="form-control">
 				<option value="small">Small</option>
 				<option value="medium">Medium</option>
 				<option value="large">Large</option>
 			</select>
 		</div>
+		
 		<div>
 			<label for="date">Date of Birth:</label>
-			<input class="" type="date" name="date" required="yes">
+			<input class="form-control" type="date" name="date" required="yes">
 		</div>
-		<p class="form-text">Do you want to recive email prom</p>
+		</div>
+		<div class="col-md-6">
+		<p class="form-text">Do you want to recive email promotions?</p>
 		<div class="form-check">
-			<input type="radio" id="yes" name="current" class="for-check-input"><label for="yes" class="for-check-label">Yes</label>
+			<input type="radio" id="yes" name="current" class="form-check-input"><label for="yes" class="form-check-label">Yes</label>
 		</div>
-		<div>
-			<input id="no" type="radio" name="current" class="form-check-input"><label for="no" class="for-check-label">No</label>
+		<div class="form-check">
+			<input id="no" type="radio" name="current" class="form-check-input"><label for="no" class="form-check-label">No</label>
 		</div>
+		
 		<p>Morning or Afternoon?</p>
 		<div>
-			<input type="checkbox" id="yes" name="yes" checked>
-			<label for="yes">Morning</label>
+			<input type="checkbox" id="yes" name="morning">
+			<label class="form-check-label" for="morning">Morning</label>
 		</div>
 		<div>
-			<input type="checkbox" id="no" name="no">
-			<label for="no">Afternoom</label>
+			<input type="checkbox" id="no" name="afternoon">
+			<label class="form-check-label" for="afternoon">Afternoom</label>
 		</div>
+		<p>Comments:</p>
 		<div>
-			<input type="textarea" name="textarea" size="">
+			<textarea class="form-control" type="textarea" name="textarea" rows="7" cols="70"></textarea>
 		</div>	
 		<div>
 			<input type="submit" class="btn btn-primary" name="conference-registration">
 		</div>
+		</div>
+		</div>
 	</form>
+	
 </body>
 </html>
