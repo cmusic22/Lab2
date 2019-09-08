@@ -1,0 +1,32 @@
+body {
+	background-color: 
+}
+
+img {
+	margin: 15px auto;
+	display: block;
+	border: solid black 2px;
+}
+
+.btn-default, .jumbotron {
+	background-color: #4CAF50;
+	color: #fff;
+}
+.jumbotron {
+	border-radius: 15px;
+}
+
+a {
+	cursor: pointer;
+}
+
+a:hover {
+	background-color: #fff;
+	border: solid #4CAF50 1px; 
+}
+.wrapper {
+	border-left: solid #4CAF50 5px;
+	border-right: solid #4CAF50 5px;
+	border-bottom: solid #4CAF50 5px;
+	border-radius: 15px;	
+}

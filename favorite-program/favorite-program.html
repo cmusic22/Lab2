@@ -1,5 +1,4 @@
 <!DOCTYPE HTML>
-<!DOCTYPE html>
 <html>
 <head>
 	<meta charset="utf-8">
@@ -10,9 +9,60 @@
 	<link rel="stylesheet" type="text/css" href="favorite-program-styles.css">
 </head>
 <body>
-	<div class="jumbotron">
+	<div class="container">
+	<div class="jumbotron text-center">
 		<h1>My Favorite Program</h1>
 	</div>
+	<div class="row wrapper">
+		<div class="col-md-6">	
+			<p>My favorite program I created was my Task Manager program created with Java. It allows you to add &amp; delete users. Add, edit, assign, &amp; delete tasks. It also allows you to print out all users and tasks assigned to them.</p>
+			<p class="text-center"><a class="btn btn-default" href="https://github.com/cmusic22/taskmanager.git">Access the program from my GitHub</a></p>
+			<img src="starting-screen.jpg" alt="Screen Shot of the Starting Screen Task Manager program" title="Screen Shot of the Task Manager program">
+			<img src="view-project.jpg" alt="Screen Shot of the view project screen" title="Screen Shot of the view project screen">
+			<img width="400" src="add-edit-users-tasks.jpg" alt="Screen Shot of the add/edit tasks and user screen" title="Screen Shot of the add/edit tasks and user screen">
+		</div>	
+		<div class="col-md-6">
+			<pre>
+				<code>
+    private String[] columnNames = {"Task ID", "Task Name", "Task Priority", "Task User"};
 
+
+    addEditGUI (String pName) {
+
+        selectedEnteredProjectName.setText(pName);
+
+        allUserListModel = new DefaultListModel<>();
+        userList.setModel(allUserListModel);
+        //used information on Java2s.com & docs.orocal,com
+        taskTableModel = new AbstractTableModel() {
+            @Override
+            public int getRowCount() {
+                return 0;
+            }
+
+            @Override
+            public int getColumnCount() {
+                return columnNames.length;
+            }
+
+            @Override
+            public Object getValueAt(int rowIndex, int columnIndex) {
+                return null;
+            }
+        };
+        taskTable.setModel(taskTableModel);
+
+
+        setContentPane(editGUI);
+        pack();
+        setVisible(true);
+        UserDB.fetchUserRecords();
+        addEditComponents();
+    }
+				</code>
+			</pre>
+		</div>
+	</div>				
+	</div>	
 </body>
 </html>
